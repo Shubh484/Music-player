@@ -1,0 +1,98 @@
+/* AudioPlayer.css */
+
+.audio-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.track-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.track {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  background-color: #1e9ce4;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.track.playing {
+  background-color: #000000;
+}
+
+.track button {
+  padding: 10px;
+  border: none;
+  background-color: #0f0f0f;
+  color: rgb(13, 102, 220);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.track button:hover {
+  background-color: #d9d21d;
+}
+
+.timeline {
+  width: 100%;
+  position: relative;
+}
+
+.timeline-container {
+  display: flex;
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+.timeline-track {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #0c99e6;
+  background-color: #ead518;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.timeline-track:not(:last-child) {
+  margin-right: 10px;
+}
+
+.timeline-track:hover {
+  background-color: #088edc;
+}
+
+button {
+  padding: 15px;
+  border: none;
+  background-color: #cacbcb;
+  color: rgb(11, 175, 245);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Additional Styles for a Modern Look */
+
+body {
+  background-color: #dde331;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+}
+
+h1 {
+  color: #333;
+}
